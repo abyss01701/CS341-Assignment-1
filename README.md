@@ -1,6 +1,6 @@
 # Project Title: Loan Interest Calculation and Testing
 Course: CS341 - Software Quality Assurance and Testing
-Author: [Akshat Newal. Group 9]
+Author: [Akshat Newal. Mohammed Kamal, Group 9]
 
 # 1. Project Description
 This project involves the development and testing of a loan interest calculation program. The assignment covers the following tasks:
