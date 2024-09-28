@@ -25,9 +25,11 @@ This project involves the development and testing of a loan interest calculation
 - JUnit 5 for running the automated tests.
 
 # Steps to Run:
+- Download the assignment 1 file
 - Open the Java project in your preferred IDE.
+- Browse to CalcInterest.java, it should be at "assignment 1/app/src/main/java/assignment1"
 - Compile and run the CalcInterest.java file to test the loan interest calculation manually.
-- Alternatively, you can execute the CalcInterestTest.java file to run the automated JUnit tests.
+- Alternatively, you can execute the CalcInterestTest.java file to run the automated JUnit tests which is located at "assignment 1/app/src/test/java/assignment1"
 
 # Running JUnit Tests:
 
