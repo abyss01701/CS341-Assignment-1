@@ -71,18 +71,35 @@ public class CalcInterest {
         Scanner scanner = new Scanner(System.in);
 
         // Collect input from the user
-        System.out.println("This is a Interest Loan Calculator");
+        System.out.println("This is an Interest Loan Calculator");
         System.out.println("1. Home Loan");
         System.out.println("2. Property Loan");
         System.out.println("3. Exit");
-        System.out.print("Choose an option between 1-3: ");
-        int loanType = scanner.nextInt();
         
-        if(loanType == 3)
-        {
-           System.exit(0);
+        int loanType = 0;
+        
+        // Loop until a valid loan type (1, 2, or 3) is entered
+        while (true) {
+            System.out.print("Choose an option between 1-3: ");
+            String loanTypeInput = scanner.next();  // Read input as a string
+
+            try {
+                loanType = Integer.parseInt(loanTypeInput); // Try to convert it to an integer
+                if (loanType >= 1 && loanType <= 3) {
+                    break; // Valid input (1, 2, or 3), exit the loop
+                } else {
+                    System.out.println("Invalid input, please choose between 1-3.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input, please choose 1-3");
+            }
         }
 
+        // Exit the program if the user chooses option 3
+        if (loanType == 3) {
+            System.exit(0);
+        }
+        
         System.out.print("Enter loan amount: ");
         double loanAmount = scanner.nextDouble();
 
@@ -98,7 +115,6 @@ public class CalcInterest {
         } else {
             System.out.println(result);
         }
-
         scanner.close();
     }
 }
